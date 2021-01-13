@@ -14,7 +14,9 @@
     <p>本日の日付は<?php echo $ymd ?>です。</p>
     <form action="db_regist.php" method="post">
         <input type="hidden" name="done" value="<?php echo $ymd; ?>">
-        <input type="submit" value="禁酒できた！">
+        <input type="submit" name="t_flg" value="禁酒できた！">
+        <input type="submit" name="f_flg" value="禁酒できなかった">
     </form>
+    
 </body>
 </html>
